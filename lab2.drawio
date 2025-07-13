@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net"><diagram id="diagram1" name="ตะพาบลอย">&lt;mxGraphModel dx="1015" dy="558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1"
+  arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0"&gt;
+  &lt;root&gt;
+    &lt;mxCell id="0" /&gt;
+    &lt;mxCell id="1" parent="0" /&gt;
+    &lt;mxCell id="start" value="เริ่มต้น" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"&gt;
+      &lt;mxGeometry x="200" y="20" width="120" height="40" as="geometry" /&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="input" value="รับรายการสินค้าที่ลูกค้าเลือก" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0D5F9;" vertex="1" parent="1"&gt;
+      &lt;mxGeometry x="160" y="80" width="200" height="50" as="geometry" /&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="calcTotal" value="คำนวณราคารวมทั้งหมด" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE5B4;" vertex="1" parent="1"&gt;
+      &lt;mxGeometry x="160" y="150" width="200" height="50" as="geometry" /&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="showItems" value="แสดงรายการสินค้าที่ลูกค้าเลือก" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C5E3BF;" vertex="1" parent="1"&gt;
+      &lt;mxGeometry x="160" y="220" width="200" height="50" as="geometry" /&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="calcRemain" value="คำนวณเงินคงเหลือในตู้" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCCC;" vertex="1" parent="1"&gt;
+      &lt;mxGeometry x="160" y="290" width="200" height="50" as="geometry" /&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="summary" value="แสดงผลสรุป&lt;br&gt;• ยอดขายรวม&lt;br&gt;• รายการสินค้าทั้งหมด&lt;br&gt;• เหลือเหรียญ/ธนบัตรอะไรบ้างและจำนวนเท่าไร" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"&gt;
+      &lt;mxGeometry x="160" y="360" width="200" height="80" as="geometry" /&gt;
+    &lt;/mxCell&gt;
+
+    &lt;!-- เส้นเชื่อม --&gt;
+    &lt;mxCell id="e1" style="endArrow=block;html=1;" edge="1" parent="1" source="start" target="input"&gt;
+      &lt;mxGeometry relative="1" as="geometry" /&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="e2" style="endArrow=block;html=1;" edge="1" parent="1" source="input" target="calcTotal"&gt;
+      &lt;mxGeometry relative="1" as="geometry" /&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="e3" style="endArrow=block;html=1;" edge="1" parent="1" source="calcTotal" target="showItems"&gt;
+      &lt;mxGeometry relative="1" as="geometry" /&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="e4" style="endArrow=block;html=1;" edge="1" parent="1" source="showItems" target="calcRemain"&gt;
+      &lt;mxGeometry relative="1" as="geometry" /&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="e5" style="endArrow=block;html=1;" edge="1" parent="1" source="calcRemain" target="summary"&gt;
+      &lt;mxGeometry relative="1" as="geometry" /&gt;
+    &lt;/mxCell&gt;
+  &lt;/root&gt;
+&lt;/mxGraphModel&gt;</diagram></mxfile>
