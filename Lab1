@@ -1,0 +1,14 @@
+#include <stdio.h>  // แก้ชื่อ header ให้ถูกต้อง
+
+int main() {
+    char Name[50];
+    int Age = 0;
+    printf("Enter your name: "); 
+    scanf("%s", Name);  // เพิ่ม ; ปิดท้าย
+    printf("Enter your age: ");
+    scanf("%d", &Age);  // เพิ่ม & หน้า Age เพื่อให้รับค่าได้
+    printf("- - - - - -\n");  // แก้ชื่อฟังก์ชัน print เป็น printf และเพิ่ม ; ปิดท้าย
+    printf("Hello %s \n", Name);  // แทน ___ ด้วยตัวแปร Name
+    printf("Age = %d\n", Age);    // แทน ___ ด้วยตัวแปร Age
+    
+} //end main functio
