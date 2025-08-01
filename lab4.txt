@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    char employeeID[11];  // รองรับสูงสุด 10 ตัวอักษร + null terminator
+    int workingHours;
+    float salaryPerHour, totalSalary;
+
+    // รับข้อมูล
+    printf("Input the Employees ID(Max. 10 chars): \n");
+    scanf("%10s", employeeID); // จำกัด input ไม่เกิน 10 ตัวอักษร
+
+    printf("Input the working hrs: \n");
+    scanf("%d", &workingHours);
+
+    printf("Salary amount/hr: \n");
+    scanf("%f", &salaryPerHour);
+
+    // คำนวณรายได้รวม
+    totalSalary = workingHours * salaryPerHour;
+
+    // แสดงผลลัพธ์
+    printf("Employees ID = %s\n", employeeID);
+    printf("Salary = U$ %.2f\n", totalSalary);
+
+    return 0;
+}
