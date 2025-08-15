@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int command;
+    srand(time(NULL));
+
+    while (scanf("%d", &command) == 1) {
+        if (command == -1) {
+            printf("See you again.\n");
+            break;
+        }
+        if (command != 1) {
+            printf("Please enter only 1 or -1.\n");
+            continue;
+        }
+
+        int score = 100;
+        int answer = rand() % 100 + 1;
+        int guess, min = 1, max = 100;
+
+        printf("(Score=%d)\n", score);
+
+        while (scanf("%d", &guess) == 1) {
+            if (guess == answer) {
+                printf("That is correct! The winning number is %d.\n", answer);
+                printf("Score this game: %d\n", score);
+                break;
+            }
+            score -= 10;
+            if (guess < answer) {
+                printf("Sorry, the winning number is HIGHER than %d. (Score=%d)\n", guess, score);
+                min = guess + 1;
+            } else {
+                printf("Sorry, the winning number is LOWER than %d. (Score=%d)\n", guess, score);
+                max = guess - 1;
+            }
+        }
+    }
+    return 0;
+}
